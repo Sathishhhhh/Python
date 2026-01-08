@@ -1,1 +1,14 @@
 # Python
+1.Variables,
+2.Numbers
+3.Strings
+4.List
+5.If
+6.Condition,
+7.For Loop
+8.Functions,
+9.Dictionaries,
+10.Tuples, 
+11.File Handling
+12.Classes,
+13.Exception Handling
