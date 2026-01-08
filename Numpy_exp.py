@@ -1,4 +1,4 @@
-import Numpy_exp as np
+import numpy as np
 #import pandas as pd
 
 A = np.array([1,2,3])
