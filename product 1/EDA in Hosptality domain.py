@@ -7,15 +7,39 @@ df4 = pd.read_csv("/Users/sathishkumar/Downloads/source-code/3_project_hospitali
 df5 = pd.read_csv("/Users/sathishkumar/Downloads/source-code/3_project_hospitality_analysis/datasets/fact_bookings.csv")
 df6 = pd.read_csv("/Users/sathishkumar/Downloads/source-code/3_project_hospitality_analysis/datasets/new_data_august.csv")
 
-data = df5.room_category.unique()
+#df4 = df4["property_id"].unique()
 
-data = df5["booking_platform"].unique()
+df5= df5[["property_id","revenue_generated", "revenue_realized"]]
 
-data  = df5["booking_platform"].describe
+df = df[["date", "mmm yy"]]
 
-data5 = df5.revenue_generated.mix(),df5.revenue_generated.max()
+df4 = df4[["property_id", "capacity"]]
 
-print(df5["booking_platform"].value_counts().plot(kind="bar"))
 
-print(data)
-print(data5)
+high_capacity = df4.sort_values(by="capacity", ascending=False)
+
+print(high_capacity.head(10))
+
+
+max_capacity_property = df4.loc[df4["capacity"].idxmax()]
+
+print(max_capacity_property)
+
+high_capacity_props = df4[df4["capacity"] > 100]
+
+print(high_capacity_props)
+
+
+high_capacity_props.shape[0]
+
+print(df4["capacity"].describe())
+
+
+
+
+
+
+print(df4)
+print(df5)
+print(df.head(4))
+print(df.tail(6))
