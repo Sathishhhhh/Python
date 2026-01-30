@@ -12,3 +12,7 @@
 11.File Handling
 12.Classes,
 13.Exception Handling
+14.inheritance
+15._main_func
+16.numpy
+17.
